@@ -6,14 +6,12 @@ public class PaypalService implements OnlinePaymentService {
     
 
     public double paymentFee(Double amount){
-        amount = amount * 0.02;
-        return amount;
+        return amount * 0.02;
        
     }
 
-    public double interest(Double amount , Integer months){
-        amount = (amount * 0.01) * months;
-        return amount;
+    public double interest(Double amount , Integer months){ 
+        return amount * 0.01 * months;
 
     }
 }
