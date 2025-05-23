@@ -13,8 +13,7 @@ public class PaypalService implements OnlinePaymentService {
     }
 
     public double interest(Double amount , Integer months){
-        double taxa = 0.01;
-        amount = (amount * taxa) * months;
+        amount = (amount * 0.01) * months;
         return amount;
 
     }
